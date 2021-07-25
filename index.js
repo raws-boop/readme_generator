@@ -2,7 +2,8 @@
     const inquirer = require("inquirer");
     const fs = require("fs");
     const util = require('util');
-    const generateMD = require('./utils/generateMarkdown.js');
+    const generateMarkdown = require('./utils/generateMarkdown.js');
+    const path = require('path');
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -60,8 +61,8 @@ const questions = [
     ]
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-return fs.writeFileSync(path.join(process.cwd(), fileName), data)
+function writeToFile(fileName, answers) {
+return fs.writeFileSync(path.join(process.cwd(), fileName), answers)
 }
 
 // TODO: Create a function to initialize app
@@ -72,8 +73,8 @@ function init() {
     //store responses
     .then((answers) => {
         //then create README
-        writeToFile('readme.md', generateMarkdown(answers))
-        console.log("README is generated")
+        writeToFile('./responses/README.md', generateMarkdown(answers))
+        console.log("README has been generated and placed in the 'responses' folder")
     })
 }
 // Function call to initialize app

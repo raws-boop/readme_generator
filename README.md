@@ -47,25 +47,25 @@ THEN I am taken to the corresponding section of the README
 
 ## Getting Started
 
-Here are some guidelines to help you get started:
+The project contains the following:
 
-* Create a `.gitignore` file and include `node_modules/` and `.DS_Store/` so that your `node_modules` directory isn't tracked or uploaded to GitHub. Be sure to create your `.gitignore` file before installing any npm dependencies.
+*  A `.gitignore` file and include `node_modules/` and `.DS_Store/`.
 
-* Make sure that your repo includes a `package.json` with the required dependencies. You can create one by running `npm init` when you first set up the project, before installing any dependencies.
+* A `package.json` with the required dependencies.
 
-* Include a video of the typical user flow through your application. This includes views of the prompts and the responses after their selection.
+* A gif of the typical user flow through the application. This includes views of the prompts and the responses after their selection.
 
-* Include any other screenshots you deem necessary to help someone who has never been introduced to your application understand the purpose and function of it. This is how you will communicate to potential employers or other developers in the future what you built and why, and to show how it works.
+* Additional screenshot showcasing an expected readme file. 
 
-## Grading Requirements
+### DEMO 
 
-This homework is graded based on the following criteria: 
+* Creating a README, following the in-terminal prompts. *
 
-### Deliverables: 20%
+![Demo README.md creation.](.images/readme_generator.gif)
 
-* A sample README generated using the application must be submitted.
+SCREENSHOT *Screenshot of sample README.*
 
-* Your GitHub repository containing your application code.
+![README.md output screenshot.](.images/readme_generator_samplescreen.png)
 
 ### Walkthrough Video: 27%
 
